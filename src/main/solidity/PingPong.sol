@@ -9,7 +9,8 @@ contract PingPong {
     pong_count = 0;
   }
 
-  event Pinged( string payload );
+  event Pinged( string /* indexed */ payload ); // it's not indexed in the currently deployed version
+  // event Pinged( string payload, string explanation ); // we just want to test overloaded events
   event Ponged( uint indexed count, string payload );
 
   function ping( string payload ) public {
