@@ -14,7 +14,5 @@ resolvers += ("snapshots" at "https://oss.sonatype.org/content/repositories/snap
 
 resolvers += ("Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/")
 
-libraryDependencies += "com.mchange" %% "consuela" % "0.0.5-SNAPSHOT"
-
 ethcfgScalaStubsPackage := "com.mchange.ethpingpong.contract"
 
